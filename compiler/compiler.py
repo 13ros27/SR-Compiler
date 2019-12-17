@@ -12,6 +12,10 @@ with open('user/.user-rev', 'w+') as fp:
 with open('files.json', 'r') as myfile:
     data = myfile.read()
 obj = json.loads(data)
+destination = ''
+if '__destination__' in list(obj.keys()):
+    destination = obj['__destination__'] + '/'
+    del obj['__destination__']
 
 for src in list(obj.keys()):
     dest = obj[src]
@@ -25,7 +29,7 @@ for src in list(obj.keys()):
                 pass
     shutil.copyfile('../{}'.format(src), 'user/{}'.format(dest))
 
-with ZipFile('robot.zip', 'w') as zp:
+with ZipFile(destination+'robot.zip', 'w') as zp:
     zp.write('info.yaml')
     zp.write('overlay.sr2020.2.squash')
     zp.write('wifi.yaml')
