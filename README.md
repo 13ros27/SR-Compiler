@@ -9,4 +9,4 @@ Any code you wish to compile goes outside of the compiler folder and then you mo
 
 Once you have done that you run compiler/compiler.py and it creates compiler/robot.zip which can then be copied into your memory stick to run.
 
-v1.1 also allows you to specify an `__destination__` in files.json which will aim where the robot.zip is created so that it can be created directly onto your USB drive if it is plugged in.
+v1.1 also allows you to specify a `__destination__` in files.json which will aim where the robot.zip is created so that it can be created directly onto your USB drive if it is plugged in.
