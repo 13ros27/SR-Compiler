@@ -1,4 +1,5 @@
 {
+	"__destination__": "D:",
 	"example.py": "robot.py",
 	"folder/folder_example.py": "folder/folder_example.py"
 }
