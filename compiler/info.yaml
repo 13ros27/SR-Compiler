@@ -1,0 +1,4 @@
+overlay:
+  type: "internal"
+  filename: "overlay.sr2020.2.squash"
+  filesize: 368640
